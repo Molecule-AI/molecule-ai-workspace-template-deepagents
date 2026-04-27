@@ -180,5 +180,8 @@ class DeepAgentsAdapter(BaseAdapter):
     async def create_executor(self, config: AdapterConfig) -> AgentExecutor:
         if self.agent is None:
             raise RuntimeError("setup() must be called before create_executor()")
-        from a2a_executor import LangGraphA2AExecutor
+        from molecule_runtime.a2a_executor import LangGraphA2AExecutor
         return LangGraphA2AExecutor(self.agent, heartbeat=config.heartbeat, model=config.model)
+
+
+Adapter = DeepAgentsAdapter
