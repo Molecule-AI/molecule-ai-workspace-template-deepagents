@@ -22,3 +22,6 @@ github://Molecule-AI/template-deepagents
 
 ## License
 Business Source License 1.1 — © Molecule AI.
+
+## See also
+For the multi-agent architecture (orchestrator + task agents, file-based coordination via `/workspace/agent-shared/`), the full `config.yaml` schema, environment variables, skill loading rules, dev setup, and release process, see [`CLAUDE.md`](CLAUDE.md).
